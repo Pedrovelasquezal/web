@@ -1,0 +1,207 @@
+
+@import url('https://fonts.googleapis.com/css2?familia=Poppins:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(25, 24, 24);
+    color: aliceblue;
+
+  }
+
+
+    .nav__link {
+        color: #2e2e2e;
+        display: block;
+        padding: 15px 0;
+        text-decoration: none;
+    }
+    
+    .nav__link--inside:hover {
+        background: #c0c0c0;
+    }
+    
+    .nav__link--inside {
+        border-radius: 6px;
+        padding-right: 40%;
+    }
+    
+    .list {
+        width: 100%;
+        height: 25%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 0 16px 16px 0;
+        background: #b7b7b7c4;
+    }
+    
+    .list__item {
+        list-style: none;
+        width: 100%;
+        text-align: center;
+        overflow: hidden;
+    }
+    
+    .list__item--click {
+        cursor: pointer;
+    }
+    
+    .list__button {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+        width: 70%;
+        margin: 0 auto;
+        
+    }
+    
+    .file .list__arrow {
+        transform: rotate(90deg);
+    }
+    
+    .list__arrow {
+        margin-left: auto;
+        transition: transform 0.3s;
+    }
+    
+    .list__show {
+        width: 80%;
+        margin-left: auto;
+        border-left: 2px solid #831717;
+        list-style: none;
+        transition: height 0.4s;
+        height: 0;
+    }
+
+    /*siguinte lina de coodigo*/
+
+    .box{
+        position: relative;
+        width: 30%;
+        height:400px;
+        background: repeating-conic-gradient(from var(--a), #00087a 0% , #00087a 5%, transparent 5% , transparent 40% ,#00087a 50% );
+        animation: animate 5s linear infinite;
+        border-radius: 20px;
+       margin-left: 35%;
+      margin-top: 30px;
+    
+    }
+    
+    @property --a{
+    
+        syntax:'<angle>';
+        inherits: false;
+        initial-value: 0deg;
+    }
+    @keyframes animate
+    {
+    
+        0%
+        {
+            --a: 0deg;
+    
+        }
+        100%{
+    
+           --a: 360deg; 
+    
+        }
+     
+    }
+    .box::before{
+    
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: repeating-conic-gradient(from var(--a), #00087a 0% , #00087a 5%, transparent 5% , transparent 40% ,#00087a 50% );
+        animation: animate 5s linear infinite;
+        animation-delay: -1s;
+        border-radius: 20px;
+    }
+    .box::after{
+        content: '';
+        position: absolute;
+        inset: 4px;
+     
+        border-radius: 15px;
+        border: 4px solid #101111;
+    }
+    .f1{
+        width: 97%;
+        height: 96%;
+        border-radius: 19px;
+        position:absolute;
+        display: flex;
+        margin-left: 8px;
+        margin-right: 6px;
+        margin-top: 8px;
+        margin-bottom: 10px;
+        
+    
+    }
+    
+
+        .ti{
+            text-align: center;
+        }
+      
+        p{
+
+            padding-left: 5%;
+            font-size: 20px;
+            margin-bottom: 10%;
+            padding-top: 5%;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          }
+
+        @media(max-width: 430px){
+
+            .box{
+                position: relative;
+                width: 70%;
+                height:300px;
+                background: repeating-conic-gradient(from var(--a), #00087a 0% , #00087a 5%, transparent 5% , transparent 40% ,#00087a 50% );
+                animation: animate 5s linear infinite;
+                border-radius: 20px;
+               margin-left: 18%;
+              margin-top: 30px;
+             
+            }
+
+            .f1{
+                width:95%;
+                height: 95%;
+                border-radius: 19px;
+                position:absolute;
+                display: flex;
+                margin-left: 8px;
+                margin-right: 6px;
+                margin-top: 8px;
+                margin-bottom: 10px;
+                
+            }
+
+
+
+                .ti{
+                   margin-left: -20%;
+                   margin-top: 2%;
+                    font-size: 20px;
+                }
+            
+          p{
+
+            padding-left: 5%;
+            font-size: 20px;
+            margin-bottom: 10%;
+            padding-top: 5%;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          }
+
+        }

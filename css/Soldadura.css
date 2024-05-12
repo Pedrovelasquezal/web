@@ -1,0 +1,742 @@
+@import url('https://fonts.googleapis.com/css2?familia=Poppins:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(25, 24, 24);
+    color: aliceblue;
+
+  }
+
+
+    .nav__link {
+        color: #2e2e2e;
+        display: block;
+        padding: 15px 0;
+        text-decoration: none;
+    }
+    
+    .nav__link--inside:hover {
+        background: #c0c0c0;
+    }
+    
+    .nav__link--inside {
+        border-radius: 6px;
+        padding-right: 40%;
+    }
+    
+    .list {
+        width: 100%;
+        height: 25%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 0 16px 16px 0;
+        background: #b7b7b7c4;
+    }
+    
+    .list__item {
+        list-style: none;
+        width: 100%;
+        text-align: center;
+        overflow: hidden;
+    }
+    
+    .list__item--click {
+        cursor: pointer;
+    }
+    
+    .list__button {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+        width: 70%;
+        margin: 0 auto;
+        
+    }
+    
+    .file .list__arrow {
+        transform: rotate(90deg);
+    }
+    
+    .list__arrow {
+        margin-left: auto;
+        transition: transform 0.3s;
+    }
+    
+    .list__show {
+        width: 80%;
+        margin-left: auto;
+        border-left: 2px solid #831717;
+        list-style: none;
+        transition: height 0.4s;
+        height: 0;
+    }
+
+    /*siguinte lina de coodigo*/
+
+    .box{
+        position: relative;
+        width: 30%;
+        height:300px;
+        background: repeating-conic-gradient(from var(--a), #00087a 0% , #00087a 5%, transparent 5% , transparent 40% ,#00087a 50% );
+        animation: animate 5s linear infinite;
+        border-radius: 20px;
+       margin-left: 10%;
+      margin-top: 30px;
+    
+    }
+    
+    @property --a{
+    
+        syntax:'<angle>';
+        inherits: false;
+        initial-value: 0deg;
+    }
+    @keyframes animate
+    {
+    
+        0%
+        {
+            --a: 0deg;
+    
+        }
+        100%{
+    
+           --a: 360deg; 
+    
+        }
+     
+    }
+    .box::before{
+    
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: repeating-conic-gradient(from var(--a), #00087a 0% , #00087a 5%, transparent 5% , transparent 40% ,#00087a 50% );
+        animation: animate 5s linear infinite;
+        animation-delay: -1s;
+        border-radius: 20px;
+    }
+    .box::after{
+        content: '';
+        position: absolute;
+        inset: 4px;
+     
+        border-radius: 15px;
+        border: 4px solid #101111;
+    }
+    .f1{
+        width: 97%;
+        height: 96%;
+        border-radius: 19px;
+        position:absolute;
+        display: flex;
+        margin-left: 8px;
+        margin-right: 6px;
+        margin-top: 8px;
+        margin-bottom: 10px;
+        
+    
+    }
+    
+    
+    
+    .box2{
+        position: relative;
+        position: absolute;
+        width: 30%;
+        height:300px;
+        background: repeating-conic-gradient(from var(--a), #00087a 0% , #00087a 5%, transparent 5% , transparent 40% ,#00087a 50% );
+        animation: animate 5s linear infinite;
+        border-radius: 20px;
+       margin-left: 50%;
+       margin-top: -22%;
+       margin-bottom: 10px;
+    
+    
+    }
+    
+    @property --a{
+    
+        syntax:'<angle>';
+        inherits: false;
+        initial-value: 0deg;
+    }
+    @keyframes animate
+    {
+    
+        0%
+        {
+            --a: 0deg;
+    
+        }
+        100%{
+    
+           --a: 360deg; 
+    
+        }
+     
+    }
+    .box2::before{
+    
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: repeating-conic-gradient(from var(--a), #00087a 0% , #00087a 5%, transparent 5% , transparent 40% ,#00087a 50% );
+        animation: animate 5s linear infinite;
+        animation-delay: -1s;
+        border-radius: 20px;
+
+        
+    }
+    .box2::after{
+    
+        content: '';
+        position: absolute;
+        inset: 4px;
+        border-radius: 15px;
+        border: 4px solid #101111;
+       
+        
+        
+    }
+    .f3{
+        width: 97%;
+        height: 96%;
+        border-radius: 19px;
+        position:absolute;
+        display: flex;
+        margin-left: 8px;
+        margin-right: 6px;
+        margin-top: 8px;
+        margin-bottom: 10px;
+        
+        
+    
+    }
+    
+    .box3{
+        position: relative;
+        width: 25%;
+        height: 350px;
+        background: repeating-conic-gradient(from var(--a), #00087a 0% , #00087a 5%, transparent 5% , transparent 40% ,#00087a 50% );
+        animation: animate 5s linear infinite;
+        border-radius: 20px;
+       margin-left: 15%;
+       margin-top: 20px;
+       margin-bottom: 40px;
+    }
+    
+    @property --a{
+    
+        syntax:'<angle>';
+        inherits: false;
+        initial-value: 0deg;
+    }
+    @keyframes animate
+    {
+    
+        0%
+        {
+            --a: 0deg;
+    
+        }
+        100%{
+    
+           --a: 360deg; 
+    
+        }
+     
+    }
+    .box3::before{
+    
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: repeating-conic-gradient(from var(--a), #00087a 0% , #00087a 5%, transparent 5% , transparent 40% ,#00087a 50% );
+        animation: animate 5s linear infinite;
+        animation-delay: -1s;
+        border-radius: 20px;
+    }
+    .box3::after{
+        content: '';
+        position: absolute;
+        inset: 4px;
+     
+        border-radius: 15px;
+        border: 4px solid #101111;
+    }
+    .f4{
+        width: 97%;
+        height: 96%;
+        border-radius: 19px;
+        position:absolute;
+        display: flex;
+        margin-left: 8px;
+        margin-right: 6px;
+        margin-top: 8px;
+        margin-bottom: 10px;
+        
+    
+    }
+    
+    .box4{  
+    position: relative;
+    width: 25%;
+    height: 350px;
+    background: repeating-conic-gradient(from var(--a), #00087a 0% , #00087a 5%, transparent 5% , transparent 40% ,#00087a 50% );
+    animation: animate 5s linear infinite;
+    border-radius: 20px;
+    margin-left: 50%;
+    margin-top: -29%;
+    }
+    
+    @property --a{
+    
+        syntax:'<angle>';
+        inherits: false;
+        initial-value: 0deg;
+    }
+    @keyframes animate
+    {
+    
+        0%
+        {
+            --a: 0deg;
+    
+        }
+        100%{
+    
+           --a: 360deg; 
+    
+        }
+     
+    }
+    .box4::before{
+    
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: repeating-conic-gradient(from var(--a), #00087a 0% , #00087a 5%, transparent 5% , transparent 40% ,#00087a 50% );
+        animation: animate 5s linear infinite;
+        animation-delay: -1s;
+        border-radius: 20px;
+    }
+    .box4::after{
+        content: '';
+        position: absolute;
+        inset: 4px;
+     
+        border-radius: 15px;
+        border: 4px solid #101111;
+    }
+    .f5{
+        width: 97%;
+        height: 96%;
+        border-radius: 19px;
+        position:absolute;
+        display: flex;
+        margin-left: 8px;
+        margin-right: 6px;
+        margin-top: 8px;
+        margin-bottom: 10px;
+        
+    
+    }
+    
+    .box5{
+        position: relative;
+        width: 450px;
+       height: 412px;
+       background: repeating-conic-gradient(from var(--a), #00087a 0% , #00087a 5%, transparent 5% , transparent 40% ,#00087a 50% );
+        animation: animate 5s linear infinite;
+        border-radius: 20px;
+       margin-right: 60%;
+       margin-top: 20px;
+       margin-bottom: 40px;
+    }
+    
+    @property --a{
+    
+        syntax:'<angle>';
+        inherits: false;
+        initial-value: 0deg;
+    }
+    @keyframes animate
+    {
+    
+        0%
+        {
+            --a: 0deg;
+    
+        }
+        100%{
+    
+           --a: 360deg; 
+    
+        }
+     
+    }
+    .box5::before{
+    
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: repeating-conic-gradient(from var(--a), #00087a 0% , #00087a 5%, transparent 5% , transparent 40% ,#00087a 50% );
+        animation: animate 5s linear infinite;
+        animation-delay: -1s;
+        border-radius: 20px;
+    }
+    .box5::after{
+        content: '';
+        position: absolute;
+        inset: 4px;
+     
+        border-radius: 15px;
+        border: 4px solid #101111;
+    }
+    .f6{
+        width: 97%;
+        height: 96%;
+        border-radius: 19px;
+        position:absolute;
+        display: flex;
+        margin-left: 8px;
+        margin-right: 6px;
+        margin-top: 8px;
+        margin-bottom: 10px;
+        
+    
+    }
+    
+    .box6{  
+        position: relative;
+        width: 30%;
+        height:300px;
+        background: repeating-conic-gradient(from var(--a), #00087a 0% , #00087a 5%, transparent 5% , transparent 40% ,#00087a 50% );
+        animation: animate 5s linear infinite;
+        border-radius: 20px;
+        margin-left: 50%;
+        margin-top:5%;
+        }
+        
+        @property --a{
+        
+            syntax:'<angle>';
+            inherits: false;
+            initial-value: 0deg;
+        }
+        @keyframes animate
+        {
+        
+            0%
+            {
+                --a: 0deg;
+        
+            }
+            100%{
+        
+               --a: 360deg; 
+        
+            }
+         
+        }
+        .box6::before{
+        
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: repeating-conic-gradient(from var(--a), #00087a 0% , #00087a 5%, transparent 5% , transparent 40% ,#00087a 50% );
+            animation: animate 5s linear infinite;
+            animation-delay: -1s;
+            border-radius: 20px;
+        }
+        .box6::after{
+            content: '';
+            position: absolute;
+            inset: 4px;
+         
+            border-radius: 15px;
+            border: 4px solid #101111;
+        }
+        .f7{
+            width: 97%;
+        height: 96%;
+            border-radius: 19px;
+            position:absolute;
+            display: flex;
+            margin-left: 8px;
+            margin-right: 6px;
+            margin-top: 8px;
+            margin-bottom: 10px;
+        
+        }
+    
+        .box7{
+            position: relative;
+            width: 30%;
+            height:300px;
+            background: repeating-conic-gradient(from var(--a), #00087a 0% , #00087a 5%, transparent 5% , transparent 40% ,#00087a 50% );
+            animation: animate 5s linear infinite;
+            border-radius: 20px;
+           margin-bottom: 10px;
+           margin-top: -22%;
+           margin-left: 10%;
+        
+        }
+        
+        @property --a{
+        
+            syntax:'<angle>';
+            inherits: false;
+            initial-value: 0deg;
+        }
+        @keyframes animate
+        {
+        
+            0%
+            {
+                --a: 0deg;
+        
+            }
+            100%{
+        
+               --a: 360deg; 
+        
+            }
+         
+        }
+        .box7::before{
+        
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: repeating-conic-gradient(from var(--a), #00087a 0% , #00087a 5%, transparent 5% , transparent 40% ,#00087a 50% );
+            animation: animate 5s linear infinite;
+            animation-delay: -1s;
+            border-radius: 20px;
+            
+        }
+        .box7::after{
+        
+            content: '';
+            position: absolute;
+            inset: 4px;
+            border-radius: 15px;
+            border: 4px solid #101111;
+           
+            
+            
+        }
+        .f8{
+            width: 97%;
+            height: 96%;
+            border-radius: 19px;
+            position:absolute;
+            display: flex;
+            margin-left: 8px;
+            margin-right: 6px;
+            margin-top: 8px;
+            margin-bottom: 10px;
+            
+        
+        }
+        h1{
+            padding-left: 30%;
+        }
+        h2{
+            padding-left: 40%;
+        }
+        .OO{
+            padding-left: 37%;
+        }
+
+        @media(max-width: 430px){
+
+            .box{
+                position: relative;
+                width: 70%;
+                height:300px;
+                background: repeating-conic-gradient(from var(--a), #00087a 0% , #00087a 5%, transparent 5% , transparent 40% ,#00087a 50% );
+                animation: animate 5s linear infinite;
+                border-radius: 20px;
+               margin-left: 18%;
+              margin-top: 30px;
+             
+            }
+
+            .f1{
+                width:95%;
+                height: 95%;
+                border-radius: 19px;
+                position:absolute;
+                display: flex;
+                margin-left: 8px;
+                margin-right: 6px;
+                margin-top: 8px;
+                margin-bottom: 10px;
+                
+            }
+
+            .box2{
+                position: relative;
+                position: absolute;
+                width: 70%;
+                height:300px;
+                background: repeating-conic-gradient(from var(--a), #00087a 0% , #00087a 5%, transparent 5% , transparent 40% ,#00087a 50% );
+                animation: animate 5s linear infinite;
+                border-radius: 20px;
+               margin-left: 18%;
+               margin-top: 5%;
+               margin-bottom: 80px;
+            
+            
+            }
+
+            .f3{
+                width: 95%;
+                height: 95%;
+                border-radius: 19px;
+                position:absolute;
+                display: flex;
+                margin-left: 8px;
+                margin-right: 6px;
+                margin-top: 8px;
+                margin-bottom: 70px;         
+            
+            }
+
+            .box3{
+                position: relative;
+                width: 70%;
+                height: 350px;
+                background: repeating-conic-gradient(from var(--a), #00087a 0% , #00087a 5%, transparent 5% , transparent 40% ,#00087a 50% );
+                animation: animate 5s linear infinite;
+                border-radius: 20px;
+               margin-left: 18%;
+               margin-top: 20px;
+               margin-bottom: 40px;
+            }
+           
+            .f4{
+                width: 95%;
+                height: 95%;
+                border-radius: 19px;
+                position:absolute;
+                display: flex;
+                margin-left: 8px;
+                margin-right: 6px;
+                margin-top: 8px;
+                margin-bottom: 10px;
+                
+            
+            }
+            
+
+            .box4{  
+                position: relative;
+                width: 70%;
+                height: 350px;
+                background: repeating-conic-gradient(from var(--a), #00087a 0% , #00087a 5%, transparent 5% , transparent 40% ,#00087a 50% );
+                animation: animate 5s linear infinite;
+                border-radius: 20px;
+                margin-left: 18%;
+                margin-top: 5%;
+                }
+            
+                .f5{
+                    width: 95%;
+                    height: 95%;
+                    border-radius: 19px;
+                    position:absolute;
+                    display: flex;
+                    margin-left: 8px;
+                    margin-right: 6px;
+                    margin-top: 8px;
+                    margin-bottom: 10px;
+                    
+                
+                }
+
+                .box6{  
+                    position: relative;
+                    width: 70%;
+                    height:300px;
+                    background: repeating-conic-gradient(from var(--a), #00087a 0% , #00087a 5%, transparent 5% , transparent 40% ,#00087a 50% );
+                    animation: animate 5s linear infinite;
+                    border-radius: 20px;
+                    margin-left: 18%;
+                    margin-top:5%;
+                    }
+
+                    .f7{
+                        width: 95%;
+                    height: 95%;
+                        border-radius: 19px;
+                        position:absolute;
+                        display: flex;
+                        margin-left: 8px;
+                        margin-right: 6px;
+                        margin-top: 8px;
+                        margin-bottom: 10px;
+                    
+                    }
+
+                    .box7{
+                        position: relative;
+                        width: 70%;
+                        height:300px;
+                        background: repeating-conic-gradient(from var(--a), #00087a 0% , #00087a 5%, transparent 5% , transparent 40% ,#00087a 50% );
+                        animation: animate 5s linear infinite;
+                        border-radius: 20px;
+                       margin-bottom: 10px;
+                       margin-top: 5%;
+                       margin-left: 18%;
+            
+                    }
+
+                    .f8{
+                        width: 95%;
+                        height: 95%;
+                        border-radius: 19px;
+                        position:absolute;
+                        display: flex;
+                        margin-left: 8px;
+                        margin-right: 6px;
+                        margin-top: 8px;
+                        margin-bottom: 10px;
+                        
+                    
+                    }
+
+                .ti{
+                   margin-left: -20%;
+                   margin-top: 2%;
+                    font-size: 20px;
+                }
+                .su1{
+                    margin-top: 2%;
+                    margin-left: 0%;
+                }
+
+                .su2{
+                    margin-left: 0%;
+                    margin-top: 90%;
+                }
+                .OO{
+                    margin-left: -10%;
+                }
+
+        }
